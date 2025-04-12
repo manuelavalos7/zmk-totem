@@ -49,19 +49,19 @@
             key-positions = <18 17 16>;
             timeout-ms = <70>;
             require-prior-idle-ms = <100>;
-            }
+            };
             F5_combo {
             bindings = <&kp F5>;
             key-positions = <3 2>;
             timeout-ms = <70>;
             require-prior-idle-ms = <100>;
-            }
+            };
             F2_combo {
             bindings = <&kp F5>;
             key-positions = <5 4>;
             timeout-ms = <70>;
             require-prior-idle-ms = <100>;
-            }
+            };
     };
 
     macros {
