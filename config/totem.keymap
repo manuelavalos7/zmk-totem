@@ -33,9 +33,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_enter {
+        combo_end {
             timeout-ms = <50>;
-            key-positions = <16 17 18>;
+            key-positions = <18 17>;
             bindings = <&kp ENTER>;
             layers = <0>;
         };
@@ -68,7 +68,12 @@
 
         combo_f2 {
             bindings = <&kp F2>;
-            key-positions = <4 5>;
+            key-positions = <0 1>;
+        };
+
+        combo_home {
+            bindings = <&kp C_AC_HOME>;
+            key-positions = <16 17>;
         };
     };
 
@@ -111,10 +116,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q  &kp W  &kp E           &kp R        &kp T        &kp Y            &kp U            &kp I      &kp O    &kp P
-         &kp A  &kp S  &mt LEFT_ALT D  &mt LGUI F   &kp G        &kp H            &kp J            &kp K      &kp L    &kp SEMICOLON
-&kp TAB  &kp Z  &kp X  &kp C           &kp V        &kp B        &kp N            &kp M            &kp COMMA  &kp DOT  &kp FSLH       &kp DELETE
-                       &kp LALT        &lt 1 SPACE  &sk LCTRL    &sk RIGHT_SHIFT  &lt 2 BACKSPACE  &to 1
+         &kp Q  &kp W  &kp E           &kp R        &kp T        &kp Y            &kp U            &kp I         &kp O    &kp P
+         &kp A  &kp S  &mt LEFT_ALT D  &mt LGUI F   &kp G        &kp H            &kp J            &kp K         &kp L    &kp SEMICOLON
+&kp TAB  &kp Z  &kp X  &kp C           &kp V        &kp B        &kp N            &kp M            &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
+                       &kp LALT        &lt 1 SPACE  &sk LCTRL    &sk RIGHT_SHIFT  &lt 2 BACKSPACE  &kp KP_ENTER
             >;
         };
 
@@ -137,10 +142,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7         &kp N8        &kp N9        &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
-                               &to 0     &kp SPACE  &trans      &kp N0    &kp BACKSPACE  &to 2
+        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL             &kp LBRC    &kp RBRC  &kp N7         &kp N8        &kp N9        &kp KP_PLUS
+        &kp LSHFT  &kp LEFT    &kp DOWN  &mt RIGHT_GUI PERIOD  &kp LBKT    &kp RBKT  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN             &kp LPAR    &kp RPAR  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
+                               &to 0     &kp SPACE             &trans      &kp N0    &kp BACKSPACE  &to 2
             >;
         };
 
