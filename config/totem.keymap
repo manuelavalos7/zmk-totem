@@ -42,13 +42,13 @@
 
         combo_esc {
             timeout-ms = <100>;
-            key-positions = <11 12 13>;
+            key-positions = <13 12>;
             bindings = <&kp ESCAPE>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <2 3>;
+            key-positions = <12 11>;
         };
 
         combo_f5 {
